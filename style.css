@@ -1,0 +1,1287 @@
+/* TOVE VALLEY WEBSITE  - style.css */
+
+/*Basic page setup */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	font-family: Montserrat, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+body > .contents:first-child {
+	width: 100%;
+	max-width: 100%;
+}
+
+#main {
+	min-height: 100vh;
+}
+
+.footer {
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+#page-content {
+	flex: 1 0 auto;
+}
+
+#sticky-footer {
+	flex-shrink: none;
+}
+
+/* Colours */
+.text-tw-logo-green {
+	color: rgb(123, 146, 158);
+}
+
+.bg-tw-logo-green {
+	background-color: rgb(123, 146, 158);
+}
+
+.bg-tw-logo-green-pale {
+	background-color: rgba(123, 146, 158, 0.1);
+	opacity: 0.33;
+}
+
+.text-tw-logo-red {
+	color: rgb(116, 41, 39);
+}
+
+.tetbury-redtextonwhite {
+	color: rgb(116, 41, 39);
+	border-color: white;
+	background-color: white;
+	text-decoration: none;
+}
+
+.tetbury-redtextonwhite:hover {
+	color: rgb(116, 41, 39);
+	border-color: white;
+	background-color: white;
+	text-decoration: underline;
+}
+
+.text-tw-red {
+	color: red;
+}
+
+.text-tw-light-green {
+	color: rgb(61, 207, 145);
+}
+
+.bg-tw-red {
+	background-color: red;
+	opacity: 90%;
+}
+
+.tetbury-greentextonwhite {
+	color: rgb(123, 146, 158);
+	border-color: white;
+	background-color: white;
+	text-decoration: none;
+}
+
+.tetbury-greentextonwhite:hover {
+	color: rgb(123, 146, 158);
+	border-color: rgb(123, 146, 158);
+	background-color: white;
+	text-decoration: underline;
+}
+
+.tetbury-whitetextongreen {
+	color: white;
+	border-color: white;
+	background-color: rgb(123, 146, 158);
+	text-decoration: none;
+}
+
+.tetbury-whitetextongreen:hover {
+	color: white;
+	border-color: white;
+	background-color: rgb(123, 146, 158);
+	text-decoration: underline;
+}
+
+.tetbury-whitetextonred {
+	color: white;
+	border-color: rgb(116, 41, 39);
+	background-color: rgb(116, 41, 39);
+	text-decoration: none;
+}
+
+.tetbury-whitetextonred:hover {
+	color: white;
+	border-color: rgb(116, 41, 39);
+	background-color: rgb(116, 41, 39);
+	text-decoration: underline;
+}
+
+.tetbury-whitetextonscarlet {
+	color: white;
+	border-color: rgb(255, 9, 15);
+	background-color: rgb(255, 9, 15);
+	text-decoration: none;
+}
+
+.tetbury-whitetextonscarlet:hover {
+	color: white;
+	border-color: rgb(255, 9, 15);
+	background-color: rgb(255, 9, 15);
+	text-decoration: underline;
+}
+
+.text-scarlet {
+	color: rgb(255, 9, 15);
+}
+
+.tetbury-scarlettextonwhite {
+	color: rgb(255, 9, 15);
+	border-color: white;
+	background-color: white;
+	text-decoration: none;
+}
+
+.tetbury-scarlettextonwhite:hover {
+	color: rgb(255, 9, 15);
+	border-color: white;
+	background-color: white;
+	text-decoration: underline;
+}
+
+.bg-highlight-yellow {
+	background-color: yellow;
+}
+.bg-highlight-green {
+	background-color: rgb(43, 156, 25);
+}
+.text-highlight-green {
+	color: rgb(43, 156, 25);
+}
+.bg-green {
+	background-color: rgb(20, 97, 9);
+}
+.text-green {
+	color: rgb(20, 97, 9);
+}
+.image-medium {
+	width: 200px;
+	height: auto;
+	border: 1px solid black;
+	margin-bottom: 25px;
+}
+.image-medium img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.news-image {
+	height: 30px;
+	width: auto;
+	vertical-align: middle;
+}
+
+.carousel-control-prev-green {
+	color: rgb(123, 146, 158);
+}
+
+/* Read More */
+.modal-staff {
+	width: 50vw;
+}
+
+*/
+
+/* Navigation Bar styles*/
+nav {
+	padding: 0;
+	display: inline-flex;
+}
+
+.navbar-dark {
+	background-color: rgb(123, 146, 158);
+	border-color: rgb(123, 146, 158);
+	color: white;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.nav-link:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+
+.nav-item {
+	color: white !important;
+}
+
+.nav-item:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+
+a.active {
+	text-decoration: underline;
+}
+
+/* Footer */
+footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0.5rem;
+	background-color: rgb(123, 146, 158);
+	text-align: left;
+	color: #fff;
+}
+
+.border-tw-logo-green {
+	border-bottom: 2px solid rgb(123, 146, 158);
+}
+.border-grey {
+	border: 10px rgb(46, 60, 71, 0.75);
+	border-radius: 0;
+}
+.border-red {
+	border: 10px ridge rgb(116, 41, 39);
+	border-radius: 0;
+}
+
+.border-double-red {
+	border: 10px double rgb(116, 41, 39);
+	border-radius: 0;
+}
+.box-shadow-light {
+	box-shadow: 0px 2px rgba(255, 255, 255, 0.2);
+}
+.box-shadow-dark {
+	box-shadow: 0px 2px rgba(123, 146, 158, 0.2);
+}
+
+.circle-border-tw-logo-green {
+	border: 2px solid rgb(123, 146, 158, 0.5);
+}
+
+.circle-border-tw-logo-red {
+	border: 2px rgba(116, 41, 39, 0.1);
+}
+
+.bg-social {
+	background-color: rgba(123, 146, 158, 0.7);
+}
+
+.style-instagram {
+	background: linear-gradient(-45deg, #ed1c94, #ffec17);
+	color: white;
+	border: none;
+	border-radius: 30%;
+}
+
+.tetbury-whitetextongreen-social {
+	color: white;
+	border-color: white;
+	background-color: rgba(123, 146, 158 0.7);
+	text-decoration: none;
+}
+
+.tetbury-whitetextongreen-social:hover {
+	color: white;
+	border-color: white;
+	background-color: rgba(123, 146, 158 0.7);
+	text-decoration: underline;
+}
+
+/*................Images ..............*/
+img {
+	aspect-ratio: attr(width) / attr(height);
+}
+
+.img-border {
+	border: 10px solid;
+	border-image-source: url(images/logos-icons/border-frame.jpg);
+	border-image-slice: 48;
+}
+
+.img-border-thin {
+	border: 5px solid;
+	border-image-source: url(images/cards/border-frame.jpg);
+	border-image-slice: 48;
+}
+
+.img-blog {
+	float: left;
+	height: 10em;
+	width: auto;
+	padding: 0.5em;
+}
+
+.smalllogo {
+	width: 6rem;
+	height: auto;
+	/*   width: 200;
+  height: 138; */
+	padding: 0.2em;
+}
+
+.footerlogo {
+	width: 50%;
+	height: auto;
+	padding: 0.2em;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.img-bottle {
+	width: 108;
+	height: 368;
+}
+
+.img-bottle-small {
+	width: 94;
+	height: 184;
+}
+
+.square img {
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	object-fit: contain;
+	border-radius: 50%;
+}
+
+/* Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.rotate {
+	animation-name: rotate;
+	animation-duration: 2000ms;
+	animation-timing-function: linear;
+	animation-delay: 300ms;
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(300px);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.slideInRight {
+	animation-name: slideInRight;
+	animation-timing-function: ease-in;
+	animation-duration: 2000ms;
+	animation-delay: 500ms;
+}
+
+.smooth-jump {
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+}
+
+/* Carousel of images */
+.carousel-fade {
+	-webkit-transition-duration: 10s;
+	/* Safari */
+	transition-duration: 10s;
+}
+
+/*  */
+.carousel-inner {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	padding: 0rem;
+	border-radius: 0;
+}
+
+.carousel-indicators img {
+	width: 250px;
+	display: block;
+}
+
+.carousel-indicators button {
+	width: max-content !important;
+}
+
+.carousel-indicators button.active img {
+	border: 4px solid rgb(116, 41, 39);
+}
+
+/* Maps */
+
+.iframe-map {
+	width: 80%;
+	height: 250px;
+}
+
+.iframe-map-small {
+	width: 50%;
+	height: 100px;
+}
+
+/*................Text ..............*/
+h1 {
+	font-family: "Cinzel", Georgia, serif;
+}
+
+h2 {
+	font-family: "Cinzel", Georgia, serif;
+}
+
+.serif {
+	font-family: "Cinzel", Georgia, serif;
+}
+
+.pagetitle {
+	color: rgb(123, 146, 158);
+	padding-top: 1rem;
+}
+
+.pagetitle-xmas {
+	color: #3dcf91;
+	padding-top: 1rem;
+}
+
+.text-tiny {
+	padding-top: 0;
+	font-size: 0.9rem;
+}
+
+.text-xs {
+	padding-top: 0;
+	font-size: 0.8rem;
+}
+
+.text-prices {
+	padding-top: 0;
+	font-size: 0.7rem;
+}
+
+.text-xxs {
+	padding-top: 0;
+	font-size: 0.6rem;
+}
+
+.blockquote {
+	font-style: italic;
+}
+
+hr.tw-hr {
+	height: 3px;
+	border: 1px solid rgb(116, 41, 39);
+	background-color: white;
+	opacity: 1;
+	border-left: none;
+	border-right: none;
+}
+
+.logo-border {
+	border: 1px double rgb(116, 41, 39);
+	background-color: white;
+	opacity: 1;
+	border-left: none;
+	border-right: none;
+}
+
+.ul-tw {
+	font-size: 0.8rem;
+	text-align: left;
+	margin-left: 0.5rem;
+	padding: 0.2em;
+}
+
+.choices {
+	height: 4rem;
+}
+
+.li-nobullets {
+	list-style-type: none;
+	padding-top: 0.5rem;
+	padding-left: 0.2rem;
+}
+
+/*................Buttons ..............*/
+.btn-white {
+	color: rgb(255, 255, 255, 0.75);
+	background-color: rgb(46, 60, 71, 0.75);
+	text-decoration: none;
+}
+
+.btn-white:hover {
+	color: rgb(255, 255, 255, 0.75);
+	background-color: rgb(46, 60, 71);
+	text-decoration: underline;
+}
+
+.btn-tetburyred {
+	color: white;
+	border-color: rgb(116, 41, 39);
+	background-color: rgb(116, 41, 39);
+}
+
+.btn-tetburyred:hover {
+	color: rgb(116, 41, 39) !important;
+	border-color: rgb(116, 41, 39, 0.75);
+	background-color: white !important;
+}
+
+.btn-tetburygreen {
+	color: white;
+	border-color: rgb(123, 146, 158);
+	background-color: rgb(123, 146, 158);
+}
+
+.btn-tetburygreen:hover {
+	color: rgb(123, 146, 158) !important;
+	border-color: rgb(123, 146, 158, 0.75);
+	background-color: white !important;
+}
+
+.link-black {
+	color: black !important;
+	text-decoration: none;
+}
+
+.link-black:hover {
+	color: black !important;
+	text-decoration: underline;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+.outline {
+	outline: rgb(123, 146, 158) solid 1px;
+}
+
+.carousel-item .active {
+	text-decoration: none;
+}
+
+.no-border {
+	border: none;
+}
+
+/* Make the image responsive */
+.dropdown-toggle {
+	border: none;
+}
+
+.dropdown-toggle:hover {
+	border: none;
+}
+
+/*................Cards ..............*/
+/* Flexbox cards */
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.card-index {
+	height: 3.5em;
+}
+
+.card-title-staff {
+	color: white;
+	background-color: rgb(123, 146, 158);
+	text-align: center;
+	padding: 0.5rem;
+	margin-bottom: 0;
+	font-size: 100%;
+	height: 6.5em;
+}
+
+.card-contact-height {
+	height: 5em;
+}
+
+.card-title {
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	margin-bottom: 0;
+	font-size: 100%;
+}
+
+.card-title-banner {
+	text-align: center;
+	padding: 0.5rem;
+	margin-bottom: 0;
+	font-size: 100%;
+}
+
+.card-img-top {
+	width: 100%;
+	height: auto;
+}
+
+.card-img-banner {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: px solid red;
+}
+
+.img-fit {
+	aspect-ratio: 16/16;
+	object-fit: cover;
+}
+
+.card-body {
+	padding: 0rem;
+	margin: none;
+}
+
+/* Jumping to anchor tags */
+span.anchor {
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}
+
+.jump {
+	margin-top: 0px;
+	padding-top: 200px;
+}
+
+.jump-blog {
+	margin-top: 0px;
+	padding-top: 600px;
+}
+
+.hero-index {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("trenching-2025-07-15-2.jpg");
+	/* background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero-aboutus {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-fibre-laying-field.jpg");
+	/* background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner-contact {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("images/page-banner/contact-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.winelists-banner {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("images/page-banner/wines-display.jpg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.club-banner {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("images/page-banner/event-tasting.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-content {
+	/* padding: 20px 0 20px 0; */
+	min-height: 30vh;
+}
+.hero-index-content {
+	min-height: 30vh;
+	align-items: center;
+	justify-content: center;
+}
+.hero-aboutus-content {
+	min-height: 30vh;
+	align-items: center;
+	justify-content: center;
+}
+.hero-text {
+	text-shadow: 2px 2px 5px rgb(123, 146, 158);
+	font-weight: bolder;
+}
+.button-round {
+	width: 7rem;
+	height: 7rem;
+}
+.more-transparent {
+	background-color: rgb(123, 146, 158, 0.7);
+	padding: 6px;
+}
+
+.hero-box {
+	background-color: white;
+	font-size: small;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+.masked-image {
+	background: linear-gradient(
+		45deg,
+		rgba(29, 236, 197, 0.7),
+		rgba(91, 14, 214, 0.7) 100%
+	);
+}
+
+.page-divider {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url("images/background-vineyard.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 2rem;
+	padding-right: 5rem;
+	border-radius: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
+
+.welcome {
+	color: black;
+	padding: 1.2rem;
+	margin: 0 auto;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+.desktopcontentonly {
+	display: none;
+}
+
+/* Contact Page */
+/* Contact Page Banner Image */
+.banner-contact {
+	/* background-color: rgba(123, 146, 158, 0.2); */
+	background-image: url("images/page-banner/contact-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-contact-content {
+	padding: 1em;
+	margin-top: 1em;
+	max-width: 50%;
+	color: white;
+	background-color: rgba(123, 146, 158, 0.2);
+	/*   font-weight: bold; */
+}
+
+.gradient-custom {
+	/* fallback for old browsers */
+	background: rgba(123, 146, 158, 0.1);
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(123, 146, 158, 0.6),
+		rgba(123, 146, 158, 0) 70%
+	);
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(
+		45deg,
+		rgba(123, 146, 158, 0.6),
+		rgba(123, 146, 158, 0) 70%
+	);
+}
+
+.banner-contact a {
+	border: 2px solid white;
+	padding: 0.5em;
+	text-decoration: none;
+	margin-left: 1em;
+	margin-right: 1rem;
+	display: inline-block;
+	color: white;
+	background-color: rgba(116, 41, 39);
+	border-radius: 0.4em;
+}
+
+.banner-contact a:hover {
+	background: rgba(123, 146, 158);
+	text-decoration: underline;
+	color: white;
+}
+
+@media only screen and (max-width: 767px) {
+	.banner-contact {
+		background-image: url(images/page-banner/contact-banner.jpg);
+	}
+
+	.banner-contact-content {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 812px) {
+	.banner-contact {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+		margin-top: 0.5rem;
+		background-image: url(images/page-banner/contact-banner.jpg);
+		font-size: smaller;
+	}
+
+	.banner-contact-content {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+	.banner-contact {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+		margin-top: 0.5rem;
+		background-image: url(images/page-banner/contact-banner.jpg);
+	}
+
+	.banner-contact-content {
+		max-width: 65%;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+	.banner-contact {
+		background-image: url(images/page-banner/contact-banner.jpg);
+	}
+
+	.banner-contact-content {
+		max-width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 5400px) {
+	.banner-contact {
+		background-image: url(images/page-banner/contact-banner.jpg);
+	}
+}
+
+/* Contact Page Staff Images */
+.img-advert {
+	background: url(images/christmas/christmas-box.jpg);
+	background-color: solid red;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-circle {
+	width: 100%;
+	height: auto;
+}
+
+.img-full-width {
+	width: 100vw;
+	height: auto;
+}
+
+/* Contact Page Form */
+.textarea {
+	height: 100%;
+}
+
+.modal-content {
+	border-radius: 0rem;
+}
+
+/* Showing documents on laptops/desktops, 1025px and up*/
+@media only screen and (min-width: 1025px) {
+	.desktopcontentonly {
+		display: inline;
+	}
+}
+
+/* Shows the PDF documents on large screens */
+.embed-responsive-210by297 {
+	padding-bottom: 141.42%;
+	border-bottom: 1px solid black;
+	width: 90%;
+	height: 0;
+	position: relative;
+}
+
+.embed-responsive-210by297 object {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border-bottom: 1px solid black;
+}
+
+/* Firefox Bug Fix  */
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition:
+		transform 0.5s ease,
+		-webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+
+/* Cookies, social icons and Marketing */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+	.navbar-expand-md .navbar-collapse {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-dark .navbar-brand {
+		width: 60px;
+		margin-right: 0;
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+
+	.header-social {
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+
+	.header-social a:first-child {
+		margin-left: 0;
+	}
+
+	.navbar-dark .navbar-toggler {
+		width: 60px;
+		-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
+		order: 3;
+	}
+}
+
+.opaque-text {
+	opacity: 100%;
+}
+
+.header-social {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	width: auto;
+}
+
+.header-social a {
+	display: inline-block;
+	margin-left: 0.5em;
+	-moz-transition: all 0.35s ease;
+	-webkit-transition: all 0.35s ease;
+	-o-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+.header-social a:hover {
+	opacity: 0.75;
+}
+
+.header-social img {
+	display: block;
+	margin: 0;
+	max-width: 24px;
+}
+
+.contactblock {
+	padding: 0.5em;
+}
+
+.contact-msg {
+	padding: 2em 1em;
+	text-align: center;
+}
+
+#marketing-in,
+#marketing-out {
+	/*   display: inline-block;
+  float: left; */
+	/*   width: auto;
+  height: auto; */
+	margin-top: 4px;
+	margin-right: 1em;
+}
+
+.row-footer-height {
+	height: 1rem;
+}
+
+footer .social-links {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 0.75em auto 0.5em;
+}
+
+footer .social-links a {
+	display: inline-block;
+	margin: 0 0.75em;
+}
+
+footer .social-links a:hover {
+	opacity: 0.75;
+}
+
+footer .social-links img {
+	display: block;
+	margin: 0;
+	width: auto;
+	max-width: 24px;
+	height: auto;
+	max-height: 24px;
+}
+
+#popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+
+#popup .blocker {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+	opacity: 0.8;
+}
+
+#popup .inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 90%;
+	height: auto;
+	max-width: 550px;
+	padding: 2em;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+#popup h2 {
+	margin-bottom: 0.5em;
+}
+
+#popup .buttons {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 1.5em;
+}
+
+#popup button {
+	margin: 0 1.25em 0;
+	color: white;
+	border-color: rgb(123, 146, 158);
+	background-color: rgb(123, 146, 158);
+}
+
+#popup button:first-child {
+	margin-left: 0;
+}
+
+#popup button:last-child {
+	margin-right: 0;
+}
+
+#popup button:hover {
+	background-color: #ffffff;
+	color: rgb(123, 146, 158);
+}
+
+@media screen and (max-width: 400px) {
+	#popup .inner {
+		padding: 1.5em;
+	}
+
+	#popup .buttons {
+		display: block;
+	}
+
+	#popup button {
+		display: table;
+		margin: 0 auto 1em !important;
+	}
+
+	#popup button:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+/* Cookie Consent
+----------------------------------------------- */
+
+html.show--consent {
+	margin-bottom: 14em;
+}
+
+body {
+	--cc-bg: #fff;
+	--cc-text: #222;
+	--cc-btn-primary-bg: #234b2b;
+	--cc-btn-primary-text: var(--cc-bg);
+	--cc-btn-primary-hover-bg: #234b2b;
+	--cc-btn-secondary-bg: #eceef5;
+	--cc-btn-secondary-text: var(--cc-text);
+	--cc-btn-secondary-hover-bg: #e1e3e7;
+	--cc-toggle-bg-on: var(--cc-btn-primary-bg);
+	--cc-block-text: var(--cc-text);
+	--cc-overlay-bg: rgba(0, 0, 0, 0.82);
+}
+
+/* TEST */
+
+.testmenu {
+	/*    position: fixed; */
+	/*     margin-top: 0px; */
+	padding-top: 140px;
+}
+
+.blog-overlay {
+	background-color: rgba(123, 146, 158, 0.6);
+}
+
+#chateaumusar {
+	text-align: center;
+
+	font-size: 30px;
+	padding-top: 40px;
+	height: 608px;
+
+	padding-top: 300px;
+}
+
+#riesling {
+	text-align: center;
+
+	font-size: 30px;
+	padding-top: 40px;
+	height: 608px;
+
+	padding-top: 300px;
+}
+
+#avondale {
+	text-align: center;
+
+	font-size: 30px;
+	padding-top: 40px;
+	height: 608px;
+
+	padding-top: 300px;
+}
+
+#cycles {
+	text-align: center;
+
+	font-size: 30px;
+	padding-top: 40px;
+	height: 608px;
+
+	padding-top: 300px;
+}
+
+/* #four {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 40px;
+    height: 608px;
+    background: orange;
+    padding-top: 500px;
+} */
+
+#five {
+	text-align: center;
+
+	font-size: 30px;
+	padding-top: 40px;
+	height: 608px;
+
+	padding-top: 500px;
+}
