@@ -686,20 +686,48 @@ span.anchor {
 .hero-index {
 	background-color: rgba(123, 146, 158, 0.2);
 	background-image: url("trenching-2025-07-15-2.jpg");
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .hero-aboutus {
-	background-color: rgba(123, 146, 158, 0.2);
+	background-color: rgba(123, 146, 158, 0);
 	background-image: url("TVB-fibre-laying-field.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button-story {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-celebration.jpg");
+	/* background-attachment: fixed; */
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button-team {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-staff.jpg");
 	/* background-attachment: fixed; */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.button-gallery {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-fibre-laying-reel-tractor.jpg");
+	/* background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button-content {
+	min-height: 10em;
+	align-items: center;
+	justify-content: center;
+}
 .banner-contact {
 	background-color: rgba(123, 146, 158, 0.2);
 	background-image: url("images/page-banner/contact-banner.jpg");
