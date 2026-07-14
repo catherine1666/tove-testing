@@ -709,8 +709,15 @@ span.anchor {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	border-top: 2px solid red;
-	border-bottom: 2px solid red;
+}
+.hero-registration {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-fibre-reel-Churchyard.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
 }
 .button-image-link {
 	font-size: x-large;
