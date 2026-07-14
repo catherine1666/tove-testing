@@ -402,7 +402,10 @@ img {
 	transition-timing-function: linear;
 	transition-delay: 1s;
 }
-
+.jump-small {
+	margin-top: 0px;
+	padding-top: 50px;
+}
 /* Carousel of images */
 .carousel-fade {
 	-webkit-transition-duration: 10s;
@@ -698,6 +701,27 @@ span.anchor {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.hero-coverage {
+	background-color: rgba(123, 146, 158, 0);
+	background-image: url("tove_valley_broadband_area.jpg");
+	/* 	background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+}
+.button-image-link {
+	font-size: x-large;
+	color: white;
+	text-decoration: none;
+}
+.button-image-link a {
+	text-decoration: none;
+}
+.button-image-link a:hover {
+	text-decoration: underline;
 }
 .button-story {
 	background-color: rgba(123, 146, 158, 0.2);
