@@ -722,6 +722,15 @@ span.anchor {
 	background-size: cover;
 	width: 100%;
 }
+.hero-support {
+	background-color: rgba(123, 146, 158, 0.2);
+	background-image: url("TVB-rooftop-cottage.jpg");
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
 .button-image-link {
 	font-size: x-large;
 	color: white;
@@ -805,6 +814,18 @@ span.anchor {
 .button-round {
 	width: 2em;
 	height: 2em;
+}
+.button-round-large {
+	width: 5em;
+	height: 5em;
+}
+.button-round-largest {
+	width: 8em;
+	height: 8em;
+}
+.button-round-largest {
+	width: 10em;
+	height: 10em;
 }
 .more-transparent {
 	background-color: rgb(123, 146, 158, 0.7);
