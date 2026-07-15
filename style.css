@@ -45,7 +45,7 @@ body > .contents:first-child {
 }
 
 .bg-tw-logo-green {
-	background-color: rgb(123, 146, 158);
+	background-color: rgb(214, 215, 214);
 }
 
 .bg-tw-logo-green-pale {
@@ -208,26 +208,26 @@ nav {
 }
 
 .navbar-dark {
-	background-color: rgb(123, 146, 158);
-	border-color: rgb(123, 146, 158);
-	color: white;
+	background-color: rgb(214, 215, 214);
+	border-color: rgb(214, 215, 214);
+	/* 	color: white; */
 }
 
 .nav-link {
-	color: white !important;
+	/* color: white !important; */
 }
 
 .nav-link:hover {
-	color: white !important;
+	/* color: white !important; */
 	text-decoration: underline;
 }
 
 .nav-item {
-	color: white !important;
+	/* color: white !important; */
 }
 
 .nav-item:hover {
-	color: white !important;
+	/* color: white !important; */
 	text-decoration: underline;
 }
 
@@ -243,14 +243,14 @@ footer {
 	padding: 0.5rem;
 	background-color: rgb(123, 146, 158);
 	text-align: left;
-	color: #fff;
+	/* 	color: #fff; */
 }
 
 .border-tw-logo-green {
-	border-bottom: 2px solid rgb(123, 146, 158);
+	border-bottom: 2px solid rgb(214, 215, 214);
 }
 .border-grey {
-	border: 10px rgb(46, 60, 71, 0.75);
+	border: 10px rgb(214, 215, 214, 0.75);
 	border-radius: 0;
 }
 .border-red {
@@ -278,7 +278,7 @@ footer {
 }
 
 .bg-social {
-	background-color: rgba(123, 146, 158, 0.7);
+	background-color: rgba(214, 215, 214, 0.7);
 }
 
 .style-instagram {
@@ -327,11 +327,11 @@ img {
 }
 
 .smalllogo {
-	width: 6rem;
+	width: 4rem;
 	height: auto;
 	/*   width: 200;
   height: 138; */
-	padding: 0.2em;
+	padding: 0.1em;
 }
 
 .footerlogo {
@@ -702,8 +702,8 @@ span.anchor {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	top: 0;
-	left: 0;
+	background-position: top center;
+	min-height: 70vh;
 }
 .hero-coverage {
 	background-color: rgba(123, 146, 158, 0);
@@ -803,8 +803,8 @@ span.anchor {
 	font-weight: bolder;
 }
 .button-round {
-	width: 7rem;
-	height: 7rem;
+	width: 2em;
+	height: 2em;
 }
 .more-transparent {
 	background-color: rgb(123, 146, 158, 0.7);
@@ -1286,64 +1286,4 @@ body {
 
 .blog-overlay {
 	background-color: rgba(123, 146, 158, 0.6);
-}
-
-#chateaumusar {
-	text-align: center;
-
-	font-size: 30px;
-	padding-top: 40px;
-	height: 608px;
-
-	padding-top: 300px;
-}
-
-#riesling {
-	text-align: center;
-
-	font-size: 30px;
-	padding-top: 40px;
-	height: 608px;
-
-	padding-top: 300px;
-}
-
-#avondale {
-	text-align: center;
-
-	font-size: 30px;
-	padding-top: 40px;
-	height: 608px;
-
-	padding-top: 300px;
-}
-
-#cycles {
-	text-align: center;
-
-	font-size: 30px;
-	padding-top: 40px;
-	height: 608px;
-
-	padding-top: 300px;
-}
-
-/* #four {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    padding-top: 40px;
-    height: 608px;
-    background: orange;
-    padding-top: 500px;
-} */
-
-#five {
-	text-align: center;
-
-	font-size: 30px;
-	padding-top: 40px;
-	height: 608px;
-
-	padding-top: 500px;
 }
