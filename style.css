@@ -569,7 +569,9 @@ hr.tw-hr {
 	border-color: rgb(123, 146, 158, 0.75);
 	background-color: white !important;
 }
-
+.button-balance {
+	text-wrap: balance;
+}
 .link-black {
 	color: black !important;
 	text-decoration: none;
@@ -697,10 +699,11 @@ span.anchor {
 .hero-aboutus {
 	background-color: rgba(123, 146, 158, 0);
 	background-image: url("TVB-celebration.jpg");
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	top: 0;
+	left: 0;
 }
 .hero-coverage {
 	background-color: rgba(123, 146, 158, 0);
